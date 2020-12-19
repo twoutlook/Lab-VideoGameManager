@@ -146,3 +146,7 @@ https://youtu.be/bCnbhB1Yo7Q
 
 ### PART2 29:09 Error by Design 
 - 
+
+### Team Explorer
+- 發現 push 失敗, 但沒有適當的地方繼續。
+  - 用命令行 git push -u origin main 是可以的
