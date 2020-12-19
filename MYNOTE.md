@@ -74,6 +74,13 @@ https://youtu.be/bCnbhB1Yo7Q
 
 -- change another browser works!
 
+### PART1 15:15 JSON formatting on Browser
+- use Chrome and sync
+  - localhost:5000/weatherforecast
+  - JSONView is ready
+    - install this extension before
 
+- POSTMAN is a major tool
+  - GET localhost:5000/weatherforecast
 
 
