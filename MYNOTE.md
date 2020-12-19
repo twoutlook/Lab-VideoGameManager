@@ -84,3 +84,65 @@ https://youtu.be/bCnbhB1Yo7Q
   - GET localhost:5000/weatherforecast
 
 
+### PART1 20:15 強調是 Console App
+- 之前在 Console App 所學的知識點, 都適用。
+
+### PART1 21:15 有一個說明沒聽懂
+- 大概是說之前的開發環境或多或少什麼情況下要週整
+- 現在 Core 系列比之前的要穏定, 不必動代碼?
+
+### PART1 22:00 略述 Startup,全局觀,細節隨後面的課程適時講解
+- IConfiguration
+- https://github.com/rstropek/htl-leo-csharp-4
+
+
+### PART1 25:00 DI, Dependence Injection
+- service 集中管理
+- 調用時不必自行操作實例化
+
+### PART1 34:20 Controller
+- 命名原則 WeatherForecastController 和繼承 ControllerBase
+- [ApiController]
+- [Route("api/[controller]")]
+- [HttpGet], Verbs:Get,Post,...
+- 405 method not allowed, when try to Post but not defined in program
+
+
+### PART2 00:42 Delete WeatherForecastController and WeatherForecast.cs
+- 每位講師有其風格,不想刪或想待會可參考就放著
+
+### PART2 01:02 主菜
+- DataAccess
+  - Model.cs
+  - VideoGameDataContext.cs
+    - Context? 
+      - NuGet Microsoft.EntityFrameworkCore.SqlSever
+      - using Microsoft.EntityFrameworkCore;
+      - NuGet Microsoft.EntityFrameworkCore.Design
+
+### PART2 11:10 
+- cheatsheet: https://github.com/rstropek/htl-leo-csharp-4
+- services.AddDbContext<BloggingContext>(options => options.UseSqlServer(
+        configuration["ConnectionStrings:DefaultConnection"]));
+- appsettings.json
+
+```
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=AddressBook;Trusted_Connection=True"
+  }
+```
+- DBcontext => using Microsoft.EntityFrameworkCore; 
+- dotnet ef migrations add Initial
+  - The Entity Framework tools version '5.0.0' is older than that of the runtime '5.0.1'
+- dotnet ef database update
+
+  - The Entity Framework tools version '5.0.0' is older than that of the runtime '5.0.1'
+
+
+### PART2 14:35 GamesController 
+- ControllerBase
+- [ApiController]
+- [Route("api/games")]
+
+### PART2 29:09 Error by Design 
+- 
