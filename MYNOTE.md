@@ -150,3 +150,4 @@ https://youtu.be/bCnbhB1Yo7Q
 ### Team Explorer
 - 發現 push 失敗, 但沒有適當的地方繼續。
   - 用命令行 git push -u origin main 是可以的
+- 帳號好像跳掉了!?
